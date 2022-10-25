@@ -1,0 +1,153 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2.4rem 1.2rem;
+  padding:  1.6rem;
+  background: #ffffff;
+  border-radius: 0.8rem;
+}
+
+ .img {
+  display: block;
+  width: 27.5rem;
+  height: 40rem;
+ }
+
+ .img_placeholder {
+  position: absolute;
+  width: 27.5rem;
+  height: 40rem;
+  background: url("../assets/no-image-placeholder.svg") no-repeat center;
+ }
+
+ .stickers {
+  position: absolute;
+  top: 3.2rem;
+  left: 3.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  max-width: 20rem;
+ }
+
+ .hit,
+ .sale {
+  padding: 0.3rem 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border-radius: 0.4rem;
+ }
+
+ .hit {
+  background: #f53d3d;
+ }
+
+ .sale {
+  background: #11c66c;
+ }
+
+ .favorite,
+ .non_favorite {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+ }
+
+.favorite {
+  background: url("../assets/fillHeartIcon.svg") no-repeat center;
+}
+
+.non_favorite {
+  background: url("../assets/emptyFavoriteIcon.svg") no-repeat center;
+}
+
+.props {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2.4rem;
+}
+
+.title {
+  margin: 0;
+  font: inherit;
+  line-height: 2.4rem;
+  color: #434851;
+}
+
+.price,
+.new_price,
+.old_price {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.price {
+  flex: 1 1 100%;
+  color: #141a25;
+}
+
+.new_price {
+  flex: 1 1 100%;
+  color: #f20d0d;
+}
+
+.old_price {
+  padding-left: 0.8rem;
+  color: #141a25;
+  text-decoration: line-through;
+}
+
+.count,
+.height,
+.width {
+  padding-left: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #72757c;
+}
+
+.count {
+  background: url("../assets/flowersCountIcon.svg") no-repeat left;
+}
+
+.height {
+  background: url("../assets/bouquetHeightIcon.svg") no-repeat left;
+}
+
+.width {
+  background: url("../assets/bouquetWidthIcon.svg") no-repeat left;
+}
+
+.button_cart,
+.button_buy {
+  padding: 1.2rem 2.3rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #141a25;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+.button_cart {
+  background: #cff4e2;
+}
+
+.button_cart:hover {
+  background: #70dda7;
+}
+
+.button_cart:disabled {
+  background: #cff4e2;
+}
+
+.button_buy {
+  background: #f6f6f6;
+}

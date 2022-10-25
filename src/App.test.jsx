@@ -1,16 +1,16 @@
-import {render, screen} from "@testing-library/react";
-import {App} from "./App";
+import { render, screen } from "@testing-library/react";
+import { App } from "./App";
 
 describe('Компонент App', () => {
     it('Отображает заголовок «Каталог»', () => {
         render(<App />)
 
-        expect(screen.queryByText('Каталог')).toBeInTheDocument();
+        expect(screen.getByText('Каталог')).toBeInTheDocument();
     });
 
     it('Отображает карточки товара', () => {
         render(<App />)
 
-        expect(screen.queryAllByTestId('product-card').length).toBeGreaterThan(0);
+        expect(screen.getAllByTestId('product-card').length).toBeGreaterThan(0);
     });
 });
