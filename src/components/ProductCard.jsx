@@ -5,8 +5,8 @@ export const ProductCard = ({ bouquetHeight, bouquetWidth, currentPrice, flowers
     const [isImgLoaded, setLoaded] = useState(false);
 
     return <div className={styles.card} data-testid='product-card'>
-        <img className={styles.img} src={imageUrl} alt='flowers' width='275' height='400' onLoad={() => setLoaded(true)}/>
-        {isImgLoaded || <div className={styles.img_placeholder} data-testid='img-placeholder'/>}
+        <img className={styles.img} src={imageUrl} alt='flowers' width='275' height='400' onLoad={setLoaded}/>
+        {!!isImgLoaded || <div className={styles.img_placeholder} data-testid='img-placeholder'/>}
         <div className={styles.stickers}>
             {isHit && <span className={styles.hit}>ХИТ</span>}
             {isSale && <span className={styles.sale}>СКИДКА</span>}
